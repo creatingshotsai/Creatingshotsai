@@ -85,3 +85,28 @@
     </footer>
 </body>
 </html>
+<script>
+    async function startAI() {
+        const btn = document.querySelector('button.bg-gradient-to-r');
+        btn.innerText = "Analyzing... Please Wait";
+        
+        try {
+            const response = await fetch('https://creatingshotsai.onrender.com/analyze-video', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url: "user_video_link" })
+            });
+            const data = await response.json();
+            
+            // AI ka result dikhana
+            alert("AI Success! \nCategory: " + data.category + "\nTags: " + data.trending_tags.join(', '));
+            btn.innerText = "Analyze & Cut Shorts";
+        } catch (error) {
+            alert("Connection Error: Backend abhi so raha hai, 1 minute baad try karein.");
+            btn.innerText = "Analyze & Cut Shorts";
+        }
+    }
+
+    // Button ko function se jodna
+    document.querySelector('button.bg-gradient-to-r').onclick = startAI;
+</script>
