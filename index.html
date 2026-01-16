@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatorMax AI - Short Clip Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        body { background: radial-gradient(circle, #1a1a2e, #16213e); color: white; }
+    </style>
+</head>
+<body class="min-h-screen font-sans">
+
+    <nav class="p-4 flex justify-between items-center glass sticky top-0 z-50">
+        <div class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
+            CREATORMAX AI
+        </div>
+        <div class="space-x-4">
+            <button class="bg-blue-600 px-4 py-2 rounded-lg text-sm hover:bg-blue-500">Login/Manage Account</button>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-10 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Video ko AI Shorts mein badlein 🎉</h1>
+        <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Emotional, Comedy, ya Horror? Hamara AI video ko analyze karega aur trending music ke saath shorts bana kar dega.</p>
+
+        <div class="glass p-8 rounded-3xl max-w-xl mx-auto border border-gray-700 shadow-2xl">
+            <i class="fas fa-cloud-upload-alt text-5xl mb-4 text-cyan-400"></i>
+            <input type="file" id="videoFile" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-cyan-50 file:text-cyan-700 hover:file:bg-cyan-100 mb-4"/>
+            <button class="w-full bg-gradient-to-r from-blue-600 to-cyan-500 py-3 rounded-xl font-bold text-lg">Analyze & Cut Shorts</button>
+            <p class="text-xs text-red-400 mt-3 italic">*Storage har 5 ghante mein auto-delete ho jayegi (Privacy & Safety).</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mt-16">
+            <div class="glass p-6 rounded-2xl border border-gray-800">
+                <h3 class="text-xl font-bold mb-2">Free Plan</h3>
+                <p class="text-3xl font-bold mb-4">$0 <span class="text-sm">/month</span></p>
+                <ul class="text-left text-sm space-y-2 mb-6">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Ads dikhenge</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Basic Analysis</li>
+                </ul>
+                <button class="w-full py-2 border border-blue-500 rounded-lg">Current Plan</button>
+            </div>
+
+            <div class="glass p-6 rounded-2xl border-2 border-cyan-500 transform scale-105">
+                <div class="bg-cyan-500 text-xs py-1 px-3 rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2">POPULAR</div>
+                <h3 class="text-xl font-bold mb-2">Basic Pro</h3>
+                <p class="text-3xl font-bold mb-4">$3 <span class="text-sm">/month</span></p>
+                <ul class="text-left text-sm space-y-2 mb-6">
+                    <li><i class="fas fa-check text-cyan-500 mr-2"></i>Daily 3 AI Shorts</li>
+                    <li><i class="fas fa-check text-cyan-500 mr-2"></i>Trending Songs & Tags</li>
+                    <li><i class="fas fa-check text-cyan-500 mr-2"></i>No Ads</li>
+                </ul>
+                <button class="w-full py-2 bg-cyan-600 rounded-lg hover:bg-cyan-500">Subscribe Now</button>
+            </div>
+
+            <div class="glass p-6 rounded-2xl border border-gray-800">
+                <h3 class="text-xl font-bold mb-2">Super Pro</h3>
+                <p class="text-3xl font-bold mb-4">$10 <span class="text-sm">/day</span></p>
+                <ul class="text-left text-sm space-y-2 mb-6">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Daily 20 Shorts</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Full AI Video Analysis</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i>Global High-Rich Times</li>
+                </ul>
+                <button class="w-full py-2 border border-blue-500 rounded-lg">Go Ultimate</button>
+            </div>
+        </div>
+
+        <div class="mt-20 grid md:grid-cols-2 gap-10 text-left">
+            <div class="glass p-6 rounded-xl">
+                <h4 class="text-cyan-400 font-bold mb-2"><i class="fas fa-shield-alt mr-2"></i>Anti-Hack & Legal</h4>
+                <p class="text-sm text-gray-400">Data encrypt rahega aur legal terms ke mutabik members ka nuksan nahi hoga.</p>
+            </div>
+            <div class="glass p-6 rounded-xl">
+                <h4 class="text-cyan-400 font-bold mb-2"><i class="fas fa-bell mr-2"></i>Smart Notifications</h4>
+                <p class="text-sm text-gray-400">Subscription khatam hone par aapko turant alert bhej diya jayega.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-10 border-t border-gray-800 text-gray-500 text-center">
+        <p>&copy; 2026 CreatorMax AI. <a href="#" class="underline">Terms of Service</a> | Global Reach Analytics Enabled.</p>
+    </footer>
+</body>
+</html>
