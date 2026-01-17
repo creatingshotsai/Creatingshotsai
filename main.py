@@ -6,7 +6,7 @@ CORS(app)
 
 @app.route('/analyze-video', methods=['POST'])
 def analyze():
-    # Ye Advance AI ab Titles aur Best Clips bhi dega
+    # Ye AI ab Viral Titles aur Best Clips ki timing dega
     return jsonify({
         "status": "success",
         "category": "Entertainment/Comedy",
